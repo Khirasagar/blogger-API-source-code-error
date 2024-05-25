@@ -19,6 +19,7 @@ public class CommentController {
 
     public CommentController(CommentRepository commentRepository) {
         this.commentRepository = commentRepository;
+        this.postRepository = postRepository; ////ERROR SOLVED
     }
 
     @PostMapping
